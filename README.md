@@ -1,6 +1,6 @@
 # Git and Git Commands
 
-## Creating Repo in Remote and Local from scratch
+## Commands to Create Repo in Remote and Local from scratch
 ### Going back one directory
 ```zsh
 cd ..
@@ -33,22 +33,54 @@ git push #after above command
 ```zsh
 touch README.md
 ```
-### Status of Repo
+### Status of Repo and **Differences in Code**
 ```zsh
 git status
+git diff #differences in code
 ```
 ### Staging and Committing
 ```zsh
-git add . #stages all files
+git add . #stages all files or git add -A
 git add "filename"
 git status
 git commit -m "message"
+
+git reset FILE_NAME #remove files from staging area (git reset alone applies to all files)
 ```
-## Renaming Local and Remote Repository
+### Cloning a Remote Repo
+```zsh
+git clone <url> <where to clone> # . means current directory
+```
+### Timestamp, Log, Removing Git from Repo
+```zsh
+git log #gives history of changes to repository
+ls -la #lists all files in repo with timestamp
+rm -rf .git #removes git directory (used for removing directories)
+```
+### Ignore Files
+```zsh
+touch .gitignore 
+*.pyc #putting star before extension ignores all file names swith extension
+```
+### Renaming Local and Remote Repository
 ```zsh
 git mv #renames a file or directory in a repo
-
-#change remote name first and then retrieve url
-git remote set-url origin NEW_URL
+git remote set-url origin NEW_URL #change remote name first and then retrieve url
 ```
-
+### View Info on Remote Repo
+```zsh
+git remote -v #information about remote branch
+git branch -a #views all the branches 
+```
+### Practice for Pulling and Pushing
+```zsh
+git pull origin master
+git push origin master
+```
+## Branching
+### Creating a Branch
+```zsh
+git branch #shows all the branches
+git branch <BRANCH_NAME> #creates branch
+git checkout <BRANCH_NAME> #switches to branch
+```
