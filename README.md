@@ -44,4 +44,11 @@ git add "filename"
 git status
 git commit -m "message"
 ```
-# Renaming local and remote repository (change url)
+## Renaming Local and Remote Repository
+```zsh
+git mv #renames a file or directory in a repo
+
+#change remote name first and then retrieve url
+git remote set-url origin NEW_URL
+```
+
