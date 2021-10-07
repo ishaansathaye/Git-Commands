@@ -48,6 +48,35 @@ git commit -m "message"
 git reset FILE_NAME #remove files from staging area (git reset alone applies to all files)
 ```
 ---
+## Branching
+### Creating a Branch
+```zsh
+git branch #shows all the branches
+git branch <BRANCH_NAME> #creates branch
+git checkout <BRANCH_NAME> #switches to branch
+```
+## Pushing Branch to Remote
+```zsh
+git push -u origin <BRANCH_NAME> #associate remote and local branches (after, use git push and pull)
+git branch -a #see all branches
+```
+## Merging a Branch
+```zsh
+git checkout master
+git pull origin master #always pull down from master
+git branch --merged #what branches have been merged so far
+giet merge <BRANCH_NAME> 
+git push origin master
+```
+## Deleting a Branch
+```zsh
+git branch --merged #just check if everything successfully merged
+git branch -d <BRANCH_NAME> #deletes branch
+git branch -a #still have branch on remote
+git push origin --delete <BRANCH_NAME> #deletes remote branch
+```
+---
+## Useful Commands
 ### Cloning a Remote Repo
 ```zsh
 git clone <url> <where to clone> # . means current directory
@@ -78,29 +107,3 @@ git branch -a #views all the branches
 git pull origin master
 git push origin master
 ```
-## Branching
-### Creating a Branch
-```zsh
-git branch #shows all the branches
-git branch <BRANCH_NAME> #creates branch
-git checkout <BRANCH_NAME> #switches to branch
-```
-## Pushing Branch to Remote
-```zsh
-git push -u origin <BRANCH_NAME> #associate remote and local branches (after use git push and pull)
-git branch -a #see all branches
-```
-## Merging a Branch
-```zsh
-git checkout master
-git pull origin master #always pull down from master
-git branch --merged #what branches have been merged so far
-giet merge <BRANCH_NAME> 
-git push origin master
-```
-## Deleting a Branch
-```zsh
-git branch --merged #just check if everything successfully merged
-git branch -d <BRANCH_NAME> #deletes branch
-git branch -a #still have branch on remote
-git push origin --delete <BRANCH_NAME> #deletes remote branch
