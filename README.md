@@ -114,4 +114,13 @@ git push origin master
 ```zsh
 #fork from remote 
 git clone <url> <where to clone>
+#make a new branch for oneself if in team
+#make changes
+#push it back to your repo
+```
+### Submitting a Pull Request
+```zsh
+#once changes made
+#Compare and Pull Request button shows up on remote
+#click Create pull request
 ```
