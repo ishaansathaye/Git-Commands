@@ -119,21 +119,22 @@ git clone <url> <where to clone>
 #push it back to your repo
 ```
 ### Submitting a Pull Request
-- once changes made
-- Compare and Pull Request button shows up on remote
-- click Create pull request
+- Once changes made:
+    - Compare and Pull Request button shows up on remote
+    - click Create pull request
 
 ### Reviewing and Approving a Pull Request
-- click Pull requests on repo in remote
-- click pull request that has to be reviewed
-- click on files changed
----
-- add a comment on line of code (blue plus button on side)
-- click and drag to select block and then click blue plus button
-- can also suggest changes to lines
----
-- if finished, click on start a review
----
-- select comment to leave general feedback, but no actual approval
-- select approve to submit feedback and approve merging the changes
-- select request changes to submit feedback before pull request is merged
+- **Finding Pull Request**
+    - click Pull requests on repo in remote
+    - click pull request that has to be reviewed
+    - click on files changed
+- **Reviewing Pull Request**
+    - add a comment on line of code (blue plus button on side)
+    - click and drag to select block and then click blue plus button
+    - can also suggest changes to lines
+- **Starting a Review**
+    - if finished, click on start a review
+- **Options to Submit Review**
+    - select comment to leave general feedback, but no actual approval
+    - select approve to submit feedback and approve merging the changes
+    - select request changes to submit feedback before pull request is merged
