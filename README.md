@@ -107,6 +107,9 @@ git branch -a #views all the branches
 git pull origin master
 git push origin master
 ```
+---
+## Contributing 
 ### Forking
 ```zsh
+#fork from remote 
 ```
