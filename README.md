@@ -80,6 +80,7 @@ git push origin --delete <BRANCH_NAME> #deletes remote branch
 ### Cloning a Remote Repo
 ```zsh
 git clone <url> <where to clone> # . means current directory
+#neds to be empty directory to specify directory
 ```
 ### Timestamp, Log, Removing Git from Repo
 ```zsh
@@ -90,7 +91,7 @@ rm -rf .git #removes git directory (used for removing directories)
 ### Ignore Files
 ```zsh
 touch .gitignore 
-*.pyc #putting star before extension ignores all file names swith extension
+*.pyc #putting star before extension ignores all file names with extension
 ```
 ### Renaming Local and Remote Repository
 ```zsh
@@ -112,4 +113,5 @@ git push origin master
 ### Forking
 ```zsh
 #fork from remote 
+git clone <url> <where to clone>
 ```
