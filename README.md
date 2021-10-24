@@ -13,6 +13,10 @@ cd ..
 ```zsh
 cd Github
 git init ExampleName
+#Or create directory and then initalize git
+mkdir ExampleName
+git init
+#add file or change code
 ```
 ### Create a new public Github Repository
 ```zsh
@@ -22,12 +26,16 @@ curl -u ishaansathaye https://api.github.com/user/repos -d '{"name":"NEW_REPO_NA
 ```
 ### Add remote connection to local
 ```zsh
+git add .
+git commit -m "first commit"
+git branch -M main
 git remote add origin #clone link
 ```
 ### Pushing to cloud onto Github (upstream)
 ```zsh
-git push --set-upstream origin master #consider using ssh instead of https
+git push -u origin main
 git push #after above command
+git push --set-upstream origin master #consider using ssh instead of https
 ```
 ### Creating Files (Readme file)
 ```zsh
